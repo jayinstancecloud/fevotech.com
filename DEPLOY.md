@@ -4,7 +4,15 @@
 
 Vercel was serving an old **single-page Vite build** (`dist/index.html` only). Links like `/pages/overview.html` did not exist in that output.
 
-This repo now includes `vite.config.js` so `npm run build` emits **all 19 HTML pages** under `dist/`.
+`npm run build` runs `scripts/build-static.mjs`, which copies **all 19 HTML pages**, `assets/`, `pages/`, and `news/` into `dist/`.
+
+A successful Vercel build log should end with:
+
+```
+Static site copied to dist/
+```
+
+If you instead see `✓ 3 modules transformed` and only `dist/index.html`, the deployment used an **old commit** or the wrong build command.
 
 ## Required Vercel project settings
 
