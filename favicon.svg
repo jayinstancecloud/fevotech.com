@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="FevoTech">
+  <defs>
+    <linearGradient id="fevoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0073ff"/>
+      <stop offset="100%" stop-color="#0d2f63"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="11" fill="url(#fevoGrad)"/>
+  <path fill="#ffffff" d="M15 14h18v5.5H21v3.5h10v5.5H15z"/>
+</svg>
